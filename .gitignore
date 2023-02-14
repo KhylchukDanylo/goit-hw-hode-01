@@ -1,0 +1,5 @@
+node.modules/
+.vscode
+.idea
+.evn
+.evn.local
