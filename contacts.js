@@ -18,8 +18,10 @@ const getContactById = async (id) => {
 
 const addContact = async (data) => {
   const contacts = await listContacts();
+  const idNewContact = Number(contacts[contacts.length - 1].id) + 1;
+  console.log(idNewContact);
   const newContact = {
-    id: String(contacts.length + 1),
+    id: String(idNewContact),
     ...data,
   };
   contacts.push(newContact);
